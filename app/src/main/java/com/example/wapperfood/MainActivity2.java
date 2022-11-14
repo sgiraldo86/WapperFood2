@@ -22,6 +22,13 @@ public class MainActivity2 extends AppCompatActivity {
         btn_user = findViewById(R.id.btn_user);
         btn_out = findViewById(R.id.btn_out);
 
+        btn_table.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                startActivity(new Intent(MainActivity2.this,MainActivity4.class));
+            }
+        });
+
         btn_out.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
